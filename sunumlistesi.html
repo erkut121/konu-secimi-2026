@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çocuk Gelişimi Dijital Okuryazarlık Dersi Sunum Programı</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f4f8; margin: 0; padding: 40px 20px; }
+        .main-layout { display: flex; gap: 30px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+        
+        .container { background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); min-width: 750px; }
+        
+        .contact-panel { 
+            background: #ffffff; padding: 25px; border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); width: 340px; 
+            border-top: 6px solid #e74c3c; position: sticky; top: 20px;
+        }
+
+        h2 { border-bottom: 3px solid #e74c3c; padding-bottom: 12px; font-size: 20px; color: #2c3e50; margin-top: 0; }
+        h3 { font-size: 18px; margin-bottom: 15px; color: #2c3e50; margin-top: 0; }
+        
+        table { border-collapse: collapse; width: 100%; }
+        th, td { 
+            padding: 12px 15px; text-align: left; 
+            border-bottom: 1.5px solid #bdc3c7; 
+            font-size: 13.5px; white-space: nowrap; 
+        }
+        
+        thead { background-color: #34495e; color: #ffffff; }
+        .group-end td { border-bottom: 4px solid #34495e !important; }
+        .name-cell { color: #2980b9; font-weight: 600; }
+        .date-cell { color: #e74c3c; font-family: 'Consolas', monospace; font-weight: bold; }
+
+        .contact-form label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #555; }
+        .contact-form input, .contact-form textarea {
+            width: 100%; padding: 12px; margin-bottom: 15px;
+            border: 1px solid #d1d8e0; border-radius: 6px; box-sizing: border-box; font-family: inherit; font-size: 13px;
+        }
+        .contact-form button {
+            width: 100%; padding: 14px; background-color: #e74c3c; color: white;
+            border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s;
+        }
+        .contact-form button:hover { background-color: #c0392b; }
+
+        @media (max-width: 1200px) { .main-layout { flex-direction: column; align-items: center; } .container { min-width: 100%; } .contact-panel { width: 100%; position: static; } }
+    </style>
+</head>
+<body>
+
+<div class="main-layout">
+    
+    <div class="container">
+        <h2>Çocuk Gelişimi Dijital Okuryazarlık Dersi Sunum Programı</h2>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sunum Konu Başlığı</th>
+                        <th>Katılımcı Ad Soyad</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Dijital uçurumun çocukların eğitimde fırsat eşitliği üzerindeki etkileri</td><td class="name-cell">Münire Demir</td><td class="date-cell">12.03.2026</td></tr>
+                    <tr class="group-end"><td>Eğitici bilgisayar oyunlarının gelişimi ve çocukların bilişsel gelişimi</td><td class="name-cell">Yusuf Çiçek</td><td class="date-cell">12.03.2026</td></tr>
+
+                    <tr><td>İnternet reklamlarının çocuk psikolojisi üzerindeki etkileri</td><td class="name-cell">Nurten Gezen</td><td class="date-cell">26.03.2026</td></tr>
+                    <tr class="group-end"><td>Okul öncesi dönemde teknoloji diyetleri ve ekran bağımlılığı</td><td class="name-cell">Zeynep Çiftçi</td><td class="date-cell">26.03.2026</td></tr>
+
+                    <tr><td>Ekran kullanımının çocuk-ebeveyn arasındaki bağlanma üzerindeki etkileri</td><td class="name-cell">Nisanur Artık</td><td class="date-cell">02.04.2026</td></tr>
+                    <tr class="group-end"><td>Çocuk gelişimiyle ilgili dijital bilgi kaynaklarına erişim ve doğruluk</td><td class="name-cell">Öznur Arvas</td><td class="date-cell">02.04.2026</td></tr>
+
+                    <tr><td>Yapay zeka destekli bakıcı ve eğitim robotlarının kullanımındaki sorunlar</td><td class="name-cell">Şehla Erik</td><td class="date-cell">09.04.2026</td></tr>
+                    <tr class="group-end"><td>Tablet ve telefon kullanımının çocuklardaki ince motor gelişimi ve fiziksel sağlık</td><td class="name-cell">Sema Taşkın</td><td class="date-cell">09.04.2026</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="contact-panel">
+        <h3>📩 Bir Sorunuz mu Var?</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 20px;">
+            Sunumunuzla ilgili soru sormak için formu doldurun.
+        </p>
+        <form class="contact-form" action="https://formspree.io/f/mdalbyyj" method="POST">
+            <label>Adınız Soyadınız</label>
+            <input type="text" name="name" placeholder="" required>
+            
+            <label>Bölümünüz</label>
+            <input type="text" name="department" placeholder="" required>
+            
+            <label>E-posta Adresiniz</label>
+            <input type="email" name="email" placeholder="" required>
+            
+            <label>Mesajınız</label>
+            <textarea name="message" rows="5" placeholder="Sorunuzu detaylı bir şekilde yazın..." required></textarea>
+            
+            <button type="submit">Mesajı Gönder</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
